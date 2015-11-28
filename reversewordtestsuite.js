@@ -9,6 +9,7 @@ var reverseWord = function(x) {
 var counterCorrect = 0;
 var counterIncorrect = 0;
 var test = function(verbose) {
+    var a = Date.now();
     var testCases = [
         ["anna", "anna"],
         ["bob", "bob"],
@@ -40,5 +41,7 @@ var test = function(verbose) {
             console.log(counterIncorrect + " tests were incorrect");
         }
     }
+    var b = Date.now();
+    console.log("the test completed in " + (b - a) + "milliseconds")
 }
 test(false);
