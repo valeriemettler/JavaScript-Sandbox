@@ -1,5 +1,20 @@
 <script>
-// a function that takes 2 list and returns the combined list
+// a function that takes 2 lists and returns the combined list
+// assume lists are sorted, output should be sorted after combining, you can't use sort or write a sort function
+// [ 1, 2, 5]  [3, 4] [ ] pick elements out and put it into the third empty list
 
+var combineLists = function(x,y) {
+  // var z = x.concat(y);
+  // console.log(z);
+
+  for (var i = 0; i < y.length; i++){
+     x.push(y[i]);
+  }
+   console.log(x);
+   return x;
+}
+
+if (JSON.stringify(combineLists([1,2],[3,4])) == JSON.stringify([1, 2, 3, 4])) { console.log("correct");} else {console.log("incorrect");}
+if (JSON.stringify(combineLists([2,2],[3,4])) == JSON.stringify([1, 2, 3, 4])) { console.log("correct");} else {console.log("incorrect");}
 
 </script>
