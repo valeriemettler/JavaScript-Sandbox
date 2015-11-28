@@ -1,27 +1,51 @@
 <script>
 //check if a string is a palindrome, return true or false
 var palCheck = function(x) {
-  var word = x;
+
+  // var word = x;
+
   //split("") returns ["a", "n", "n" "a"]
   //join("") returns "anna"
-  var n = word.split("").reverse().join("");
 
-  if (n === word){
-   return true;
-  }
-   if (n !== word){
-   return false;
-  }
+  // var n = word.split("").reverse().join("");
+
+  // if (n === word){
+  //  return true;
+  // }
+  //  if (n !== word){
+  //  return false;
+  // }
+
+   var word = x;
+   for (var i = 0; i < x.length; i++){
+     console.log(x[1]);
+
+      if (x[0] === x[3]) {
+        return true;
+      }
+
+      if (x[0] !== x[3]) {
+        return false;
+      }
+
+   }
+      // if (word[i].first === word[i].last) {
+      //   return true;
+      // }
+
+      // if (word[i].first !== word[i].last) {
+      //   return false;
+      // }
 }
 console.log("palCheck(anna) = " + palCheck("anna"));
-console.log("palCheck(bob) = " + palCheck("bob"));
-console.log("palCheck(mom) = " + palCheck("mom"));
-console.log("palCheck(racecar) = " + palCheck("racecar"));
-console.log("palCheck(twirl) = " + palCheck("twirl"));
-if (palCheck("anna") == true ) { console.log("correct");} else {console.log("incorrect");}
-if (palCheck("bob") == true ) { console.log("correct");} else {console.log("incorrect");}
-if (palCheck("mom") == true ) { console.log("correct");} else {console.log("incorrect");}
-if (palCheck("racecar") == true ) { console.log("correct");} else {console.log("incorrect");}
-if (palCheck("twirl") == false ) { console.log("correct");} else {console.log("incorrect");}
+// console.log("palCheck(bob) = " + palCheck("bob"));
+// console.log("palCheck(mom) = " + palCheck("mom"));
+// console.log("palCheck(racecar) = " + palCheck("racecar"));
+// console.log("palCheck(twirl) = " + palCheck("twirl"));
+// if (palCheck("anna") == true ) { console.log("correct");} else {console.log("incorrect");}
+// if (palCheck("bob") == true ) { console.log("correct");} else {console.log("incorrect");}
+// if (palCheck("mom") == true ) { console.log("correct");} else {console.log("incorrect");}
+// if (palCheck("racecar") == true ) { console.log("correct");} else {console.log("incorrect");}
+// if (palCheck("twirl") == false ) { console.log("correct");} else {console.log("incorrect");}
 
 </script>
