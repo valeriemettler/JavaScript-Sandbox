@@ -1,0 +1,19 @@
+<script>
+var merge =  function(left, right){
+    var result  = [];
+    var indexleft = 0;
+    var indexright = 0;
+
+    while (indexleft < left.length && indexright < right.length){
+        if (left[indexleft] < right[indexright]){
+            result.push(left[indexleft++]);
+        } else {
+            result.push(right[indexright++]);
+        }
+    }
+    console.log(result);
+    // console.log(result.concat(left.slice(indexleft)).concat(right.slice(indexright)));
+    // return result.concat(left.slice(indexleft)).concat(right.slice(indexright));
+}
+merge([1,2,5],[3, 4, 6]);
+</script>

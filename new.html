@@ -1,0 +1,59 @@
+<script>
+var merge =  function(a, b){
+    var result  = [];
+    // var i = 0;
+    // var j = 0;
+    var l = a.length;
+    var m = b.length;
+    // if (m > l ) {
+    //     n = l;
+    // } else {
+    //     n = m;
+    // }
+    // console.log(n);
+
+    var i = 0;
+    var j = 0;
+// put in first semicolon or it won't know that it's the second statement
+    for (;i < a.length;){
+   console.log("result before", result);
+
+        console.log("a", a[0]);
+        console.log("b", b[0]);
+        if (b[j] < a[i]){
+            result.push(b[j]);
+            result.push(a[i]);
+            console.log("result if b is smaller", result);
+            i = i + 1;
+            j = j + 1;
+
+        }
+        if (a[i] < b[j]){
+            result.push(a[i]);
+            result.push(b[j]);
+            console.log("result if a is smaller", result);
+            i = i + 1;
+            j = j + 1;
+
+        }
+
+        // if (b[1] < a[1]){
+        //     result.push(b[1]);
+        //     result.push(a[1]);
+        //     console.log("result if b is smaller the second time", result);
+
+        // }
+        // if (a[1] < b[1]){
+        //     result.push(a[1]);
+        //     result.push(b[1]);
+        //     console.log("result if a is smaller the second time", result);
+
+        // }
+        // i = i + 2;
+
+    console.log("end result", result);
+    // return ;
+}
+}
+merge([1,4,5,10,11,12],[2,3,6,7,8,9]);
+</script>
